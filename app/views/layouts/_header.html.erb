@@ -56,11 +56,9 @@
   </nav>
 </header>
 <% if user_signed_in? %>
-  <div class="container">
-    <div class="row">
-      <div class="mx-auto">
-        <%= render '/searches/search', user: @user %>
-      </div>
-    </div>
+<div class="container">
+  <div class="d-inline">
+    <%= render '/searches/search', user: @user %><%= render '/tag_searches/tag_search' %>
   </div>
+</div>
 <% end %>
