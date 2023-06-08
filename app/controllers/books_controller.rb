@@ -20,7 +20,7 @@ class BooksController < ApplicationController
     else
       @books = Book.all
     end
-        
+
     # to  = Time.current.at_beginning_of_day
     # from  = (to - 6.day).at_end_of_day
     # @books = Book.all.sort {|a,b|
